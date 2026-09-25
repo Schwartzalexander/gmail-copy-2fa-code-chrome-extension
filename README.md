@@ -6,6 +6,6 @@ A chrome extension, which makes 2fa-codes for two-factor-messages clickable to c
 1. Open `chrome://extensions`.
 2. Enable Developer mode.
 3. Click Load unpacked and select this folder.
-4. Open Gmail. Numeric codes with at least 4 digits and mixed codes containing digits become clickable in message bodies.
+4. Open Gmail. Numeric codes with at least 4 digits and mixed codes containing digits become clickable in subjects and message bodies.
 
 Use the extension popup to turn the feature on or off. It is on by default.

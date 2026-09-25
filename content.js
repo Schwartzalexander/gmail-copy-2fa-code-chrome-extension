@@ -3,7 +3,7 @@
   const PROCESSED_ATTR = "data-gmail-2fa-code-copier-processed";
   const CODE_PATTERN = /[A-Za-z0-9][A-Za-z0-9_-]{2,}[A-Za-z0-9]|\b\d{4,}\b/g;
   const SKIP_SELECTOR = "a, button, input, textarea, select, script, style, code, pre, ." + LINK_CLASS;
-  const MESSAGE_BODY_SELECTOR = ".a3s";
+  const SCAN_TARGET_SELECTOR = ".a3s, h2.hP";
 
   let enabled = true;
   let scanTimer = null;
@@ -67,13 +67,13 @@
 
     scanTimer = window.setTimeout(() => {
       scanTimer = null;
-      scanMessages();
+      scanTargets();
     }, 150);
   }
 
-  function scanMessages() {
-    document.querySelectorAll(MESSAGE_BODY_SELECTOR).forEach((messageBody) => {
-      processNode(messageBody);
+  function scanTargets() {
+    document.querySelectorAll(SCAN_TARGET_SELECTOR).forEach((target) => {
+      processNode(target);
     });
   }
 

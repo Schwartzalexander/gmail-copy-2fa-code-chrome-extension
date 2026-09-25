@@ -1,19 +1,13 @@
 .gmail-2fa-code-copier-link {
-  background: #e8f0fe;
-  border-radius: 4px;
-  color: #174ea6 !important;
+  color: inherit !important;
   cursor: pointer;
-  font-weight: 600;
-  padding: 0 3px;
   text-decoration: underline;
-  text-underline-offset: 2px;
 }
 
 .gmail-2fa-code-copier-link:hover {
-  background: #d2e3fc;
+  color: inherit !important;
 }
 
 .gmail-2fa-code-copier-copied {
-  background: #ceead6;
-  color: #137333 !important;
+  color: inherit !important;
 }
