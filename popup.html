@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gmail 2FA Code Copier</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <img src="icons/icon48.png" alt="" width="40" height="40">
+        <div>
+          <h1>2FA Code Copier</h1>
+          <p>For Gmail</p>
+        </div>
+      </div>
+      <p class="description">
+        Turns numeric and mixed 2FA codes in Gmail messages into clickable links. Click a code to copy it to the clipboard.
+      </p>
+      <label class="toggle">
+        <span>Enable in Gmail</span>
+        <input id="enabled" type="checkbox" checked>
+      </label>
+      <p id="status" class="status">On</p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>
